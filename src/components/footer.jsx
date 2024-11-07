@@ -21,7 +21,7 @@ function CallToAction() {
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-4xl text-sm/6 text-gray-500">
-        过去5年，我们与全球酒店集团、酒店批发商、包房商、目的地管理公司、旅游SAAS服务商等旅游资源供应商建立了深厚的合作关系，为旅行社、商旅公司、地核社、定制游公司等提供全球旅游资源，包含酒店、酒店套餐、景点门票以及体验项目等目的地碎片化产品。
+        过去5年，我们与全球酒店集团、酒店批发商、包房商、目的地管理公司、旅游SAAS服务商等旅游资源供应商建立了深厚的合作关系，为旅行社、商旅公司、地接社、定制游公司等提供全球旅游资源，包含酒店、酒店套餐、景点门票以及体验项目等目的地碎片化产品。
       </p>
       <p className="mx-auto mt-6 max-w-4xl text-sm/6 text-gray-500">
         我们提供B2B资源采购平台、API接口等多种合作方式让分销商轻松获取全球资源。
@@ -56,7 +56,7 @@ function SitemapLink(props) {
 
 function Sitemap() {
   return (
-    <div className="ml-24 flex items-center gap-20">
+    <div className="ml-24 mt-8 flex items-center gap-20">
       <div className="text-center">联系我们</div>
       <div>
         如有合作意向，请您发送邮件至&nbsp;&nbsp; <b>partners@pkbeds.com</b>
@@ -125,9 +125,10 @@ function SocialIconLinkedIn(props) {
 
 function SocialLinks() {
   return (
-    <>
-      <img src="/qr.png" alt="" className="w-24" />
-    </>
+    <div class="">
+      <img src="/qr.png" alt="" className="w-24 rounded-md" />
+      <div className="mt-3 text-xs text-slate-600">扫一扫小程序下单</div>
+    </div>
   )
 }
 
