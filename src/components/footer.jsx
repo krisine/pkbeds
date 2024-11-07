@@ -56,20 +56,10 @@ function SitemapLink(props) {
 
 function Sitemap() {
   return (
-    <>
-      <div class="grey">联系我们</div>
-      <div class="grid gap-y-4">
-        <p class="font-semibold">蒋先生</p>
-        <p>+86 13148187777</p>
-        <p>paco.jiang@pkbeds.com</p>
-      </div>
-      <div class="grid gap-y-4">
-        <p class="font-semibold">周先生</p>
-        <p>+86 13666637521</p>
-        <p>weixun.zhou@pkbeds.com</p>
-      </div>
-      <div class="grid gap-y-4">
-        如有合作意向，请您发送邮件至 partners@pkbeds.com
+    <div className="ml-24 flex items-center gap-20">
+      <div className="text-center">联系我们</div>
+      <div>
+        如有合作意向，请您发送邮件至&nbsp;&nbsp; <b>partners@pkbeds.com</b>
       </div>
       {/* <div>
         <SitemapHeading>Product</SitemapHeading>
@@ -101,7 +91,7 @@ function Sitemap() {
           <SitemapLink href="#">Privacy policy</SitemapLink>
         </SitemapLinks>
       </div> */}
-    </>
+    </div>
   )
 }
 
@@ -136,30 +126,7 @@ function SocialIconLinkedIn(props) {
 function SocialLinks() {
   return (
     <>
-      <Link
-        href="https://facebook.com"
-        target="_blank"
-        aria-label="Visit us on Facebook"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
-      >
-        <SocialIconFacebook className="size-4" />
-      </Link>
-      <Link
-        href="https://x.com"
-        target="_blank"
-        aria-label="Visit us on X"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
-      >
-        <SocialIconX className="size-4" />
-      </Link>
-      <Link
-        href="https://linkedin.com"
-        target="_blank"
-        aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-[hover]:text-gray-950/75"
-      >
-        <SocialIconLinkedIn className="size-4" />
-      </Link>
+      <img src="/qr.png" alt="" className="w-24" />
     </>
   )
 }
@@ -167,7 +134,8 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Pkbeds Inc.
+      &copy; {new Date().getFullYear()} Pkbeds Inc. &nbsp;&nbsp;&nbsp;
+      江苏湃客商旅服务有限公司 &nbsp;&nbsp;&nbsp; 苏ICP备2020070903号
     </div>
   )
 }
@@ -181,20 +149,20 @@ export function Footer() {
           <CallToAction />
           <PlusGrid className="pb-16">
             <PlusGridRow>
-              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
-                <div className="col-span-2 flex">
+              <div className="flex">
+                <div className="col-span-1 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
                     <Logo className="h-9" />
                   </PlusGridItem>
                 </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
+                <div className="">
                   <Sitemap />
                 </div>
               </div>
             </PlusGridRow>
             <PlusGridRow className="flex justify-between">
               <div>
-                <PlusGridItem className="py-3">
+                <PlusGridItem className="mt-20 py-3">
                   <Copyright />
                 </PlusGridItem>
               </div>
